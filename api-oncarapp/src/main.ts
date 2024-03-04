@@ -11,12 +11,8 @@ async function bootstrap() {
 
   const corsOptions = {
     origin: '*',
-    methods: 'GET,PUT,POST,DELETE',
-    allowedHeaders: 'Content-Type, Accept',
-    credentials: true,
-    optionsSuccessStatus: 200,
-    accessControlAllowHeaders: 'Accept',
-    accessControlAllowOrigin: '*', 
+    methods: 'GET, PUT, POST, DELETE',
+    allowedHeaders: 'Content-Type, Authorization',
   };
 
   app.use(cors(corsOptions));
