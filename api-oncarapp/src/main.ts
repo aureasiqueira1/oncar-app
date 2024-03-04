@@ -7,16 +7,13 @@ async function bootstrap() {
   config();
   const app = await NestFactory.create(AppModule);
 
-  const cors = require("cors");
-
-  app.use(cors({
-   origin: 'https://front-oncar.vercel.app/'
-  }));
-  
+  app.enableCors({
+    origin: true, // Permite todas as origens
+   });
+   
 
 
    
-  app.enableCors(); // Habilita CORS globalmente
 
   await app.listen(3001);
 }
