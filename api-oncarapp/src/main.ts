@@ -12,13 +12,17 @@ async function bootstrap() {
     res.header("Access-Control-Allow-Origin", "https://front-oncar.vercel.app"); // Update to match the domain you will make the request from
     res.header("Access-Control-Allow-Origin", "https://front-oncar.vercel.app/car"); // Update to match the domain you will make the request from
     res.header("Access-Control-Allow-Origin", "https://front-oncar.vercel.app/user"); // Update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "https://api-oncar.vercel.app"); // Update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "https://api-oncar.vercel.app/car"); // Update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", "https://api-oncar.vercel.app/user"); // Update to match the domain you will make the request from
+
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
 
 
-  
+  https://api-oncar.vercel.app/user
 
    
   app.enableCors(); // Habilita CORS globalmente
