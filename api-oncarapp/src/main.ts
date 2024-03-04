@@ -6,7 +6,19 @@ import { config } from 'dotenv';
 async function bootstrap() {
   config();
 
-  const app = await NestFactory.create(AppModule, { cors: true });
+  const app = await NestFactory.create(AppModule);
+
+
+
+  const options = {
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+    credentials: true
+  };
+
+  app.enableCors(options);
 
 
 
