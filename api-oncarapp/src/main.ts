@@ -2,20 +2,18 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { config } from 'dotenv';
-import cors from 'cors';
 
 async function bootstrap() {
   config();
   const app = await NestFactory.create(AppModule);
 
+  const cors = require("cors");
 
   app.use(cors({
-   origin: 'https://front-oncar.vercel.app'
+   origin: 'https://front-oncar.vercel.app/'
   }));
   
 
-
-  https://api-oncar.vercel.app/user
 
    
   app.enableCors(); // Habilita CORS globalmente
