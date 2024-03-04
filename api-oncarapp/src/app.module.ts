@@ -7,6 +7,7 @@ import { Car } from './car/entities/car.entity';
 import { UserModule } from './user/user.module';
 import { User } from './user/entities/user.entity';
 import { config } from 'dotenv';
+import * as cors from 'cors';
 
 config();
 
@@ -23,6 +24,8 @@ config();
       synchronize: true,
       logging: true,
     }),
+    cors(), // Import the cors package
+
     CarModule,
     UserModule,
   ],
