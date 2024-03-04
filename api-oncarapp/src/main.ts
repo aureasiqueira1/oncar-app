@@ -10,12 +10,13 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const corsOptions = {
-    origin: "*",
+    origin: '*',
     methods: 'GET,PUT,POST,DELETE',
     allowedHeaders: 'Content-Type, Accept',
     credentials: true,
     optionsSuccessStatus: 200,
     accessControlAllowHeaders: 'Accept',
+    accessControlAllowOrigin: '*', 
   };
 
   app.use(cors(corsOptions));
