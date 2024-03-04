@@ -2,6 +2,12 @@
  📱 Veículos
 </h2>
 
+<h4 align="center"><a href="https://front-oncar.vercel.app/">Clique para visitar o projeto</a></h4>
+
+<h4 align="center"><a href="https://www.figma.com/file/SdBjLiVNx2QmGIU6MfaOBe/Oncar-App?type=design&node-id=0-1&mode=design&t=cWwHROLUP1Q6HBPy-0">Figma</a></h4>
+
+
+
 Este é um projeto Full Stack em Typescript que utiliza o React para o frontend, NestJs com TypeORM para o backend, banco de dados PostgreSQL.
 
 ![image](https://github.com/aureasiqueira1/oncar-app/assets/89463362/33d4eedf-b5fc-4763-b7e2-fcfd82c77625)
