@@ -4,10 +4,10 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: '*',
+    origin: 'https://front-oncar.vercel.app',
     methods: 'GET,PUT,POST,DELETE',
-    allowedHeaders: 'Content-Type, Accept',
+    allowedHeaders: 'Content-Type, Authorization',
   });
-  await app.listen(3001);
+  await app.listen(3000);
 }
 bootstrap();
