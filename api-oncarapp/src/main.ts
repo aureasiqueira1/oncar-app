@@ -15,8 +15,10 @@ async function bootstrap() {
     'https://api-oncar.vercel.app', 
     'https://api-oncar.vercel.app/car', 
     'https://api-oncar.vercel.app/user'],
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS', // Specify allowed methods
     credentials: true,
+
+ 
+    
    });
 
   await app.listen(3001);
